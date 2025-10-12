@@ -1,0 +1,19 @@
+.about {
+  width: 100%;
+  padding: 2rem 0.2rem;
+  background-color: #ebebeb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  p {
+    font-size: 0.85rem;
+    text-align: center;
+    img {
+      width: 1.5rem;
+      transform: rotate(5deg);
+    }
+    img:nth-of-type(2) {
+      transform: rotate(-2deg);
+    }
+  }
+}
