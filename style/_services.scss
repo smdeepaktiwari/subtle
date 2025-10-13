@@ -1,0 +1,43 @@
+.services {
+  width: 100%;
+  padding-top: 2rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-bottom: 1rem;
+  h2 {
+    font-size: 0.4rem;
+    font-weight: 700;
+    color: rgb(81, 81, 81);
+  }
+  div {
+    p {
+      font-size: 0.5rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+    .serviceNo {
+      font-size: 0.4rem;
+      list-style: none;
+      color: rgb(81, 81, 81);
+      padding-top: 0.7rem;
+    }
+    .serivceHeading {
+      font-size: 0.7rem;
+      list-style: none;
+      font-weight: 800;
+      padding-top: 0.5rem;
+    }
+    .serviceDes {
+      font-size: 0.4rem;
+      list-style: none;
+      color: rgb(81, 81, 81);
+      padding-top: 0.3rem;
+    }
+    .divide {
+      margin-top: 1rem;
+      width: 100%;
+      border: 1px solid black;
+      border-width: 0.01rem;
+    }
+  }
+}
