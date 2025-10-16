@@ -3,6 +3,7 @@
 @use "./style/work";
 @use "./style/services";
 @use "./style/cta";
+@use "./style/footer";
 
 @font-face {
   font-family: subtle;
@@ -24,23 +25,49 @@ body {
   overflow-x: hidden;
 }
 
-nav {
-  width: 100%;
-  padding: 2px 20px;
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  div {
-    display: flex;
-    gap: 15px;
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  nav {
+    width: 100%;
 
-    h4 {
-      font-size: 0.45rem;
-      font-weight: lighter;
+    padding: 0.1rem 0.5rem;
+
+    .bottomNav {
+      display: flex;
+      gap: 15px;
+
+      h4 {
+        font-size: 0.45rem;
+        font-weight: lighter;
+      }
     }
   }
 }
 
+@media (min-width: 768px) {
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.2rem 1rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  nav {
+    max-width: 1600px;
+  }
+}
 @keyframes scroll {
   to {
-    transform: translateX(calc(-100% - 0.3rem));
+    transform: translateX(-100%);
   }
 }

@@ -4,40 +4,91 @@
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   padding-bottom: 1rem;
-  h2 {
-    font-size: 0.4rem;
-    font-weight: 700;
-    color: rgb(81, 81, 81);
+  .serviceResponsive {
+    width: 100%;
+    .topServices {
+      h2 {
+        font-size: 0.4rem;
+        font-weight: 700;
+        color: rgb(81, 81, 81);
+      }
+    }
+    .bottomServices {
+      p {
+        font-size: 0.5rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+      }
+      .serviceNo {
+        font-size: 0.4rem;
+        list-style: none;
+        color: rgb(81, 81, 81);
+        padding-top: 0.7rem;
+      }
+      .serivceHeading {
+        font-size: 0.7rem;
+        list-style: none;
+        font-weight: 800;
+        padding-top: 0.5rem;
+      }
+      .serviceDes {
+        font-size: 0.4rem;
+        list-style: none;
+        color: rgb(81, 81, 81);
+        padding-top: 0.3rem;
+      }
+      .divide {
+        margin-top: 1rem;
+        width: 100%;
+        border: 1px solid black;
+        border-width: 0.01rem;
+      }
+    }
   }
-  div {
-    p {
-      font-size: 0.5rem;
-      padding-top: 1rem;
-      padding-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .services {
+    padding-left: 1rem;
+    padding-right: 3rem;
+    .serviceResponsive {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+      .topServices {
+        width: 30%;
+        position: sticky;
+        top: 1px;
+        z-index: 5;
+        align-self: start;
+      }
+      .bottomServices {
+        width: 70%;
+        p {
+          padding-top: 0;
+        }
+      }
     }
-    .serviceNo {
-      font-size: 0.4rem;
-      list-style: none;
-      color: rgb(81, 81, 81);
-      padding-top: 0.7rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .services {
+    .serviceResponsive {
+      .topServices {
+        h2 {
+          font-size: 0.9rem;
+        }
+      }
     }
-    .serivceHeading {
-      font-size: 0.7rem;
-      list-style: none;
-      font-weight: 800;
-      padding-top: 0.5rem;
-    }
-    .serviceDes {
-      font-size: 0.4rem;
-      list-style: none;
-      color: rgb(81, 81, 81);
-      padding-top: 0.3rem;
-    }
-    .divide {
-      margin-top: 1rem;
-      width: 100%;
-      border: 1px solid black;
-      border-width: 0.01rem;
-    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .services .serviceResponsive {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
   }
 }

@@ -1,0 +1,145 @@
+.footer {
+  width: 100%;
+  background-color: #ebebeb;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  .contact {
+    padding-bottom: 1rem;
+    p {
+      font-size: 0.4rem;
+      text-align: center;
+      color: rgb(81, 81, 81);
+    }
+    .scrolling {
+      width: 90%;
+      margin: 0 auto;
+      font-size: 2rem;
+      font-weight: bolder;
+      display: flex;
+      gap: 0.3rem;
+      user-select: none;
+      transition: all 0.2s ease-in;
+      overflow: hidden;
+      ul {
+        list-style: none;
+        display: flex;
+        flex-shrink: 0;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0.3rem;
+        animation: scroll 25s linear infinite;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .scrolling {
+        font-size: 3rem;
+      }
+    }
+    .scrolling:hover {
+      background-color: black;
+      color: white;
+    }
+  }
+
+  .footerMain {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    .footerLogo {
+      p {
+        font-size: 0.4rem;
+        color: rgb(81, 81, 81);
+        padding-top: 0.2rem;
+      }
+    }
+    .footerLink {
+      padding-top: 1rem;
+      .links {
+        h5 {
+          font-size: 0.4rem;
+          color: rgb(81, 81, 81);
+        }
+        ul li {
+          font-size: 0.4rem;
+          list-style: none;
+          padding-top: 0.4rem;
+        }
+      }
+      .socials {
+        padding-top: 1rem;
+        padding-bottom: 1.5rem;
+        h5 {
+          font-size: 0.4rem;
+          color: rgb(81, 81, 81);
+        }
+        ul li {
+          font-size: 0.4rem;
+          list-style: none;
+          padding-top: 0.4rem;
+        }
+      }
+    }
+  }
+  .footerCopywrite {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .divide {
+      margin-top: 1rem;
+      width: 90%;
+      border: 0.01rem solid black;
+    }
+
+    .copywrite {
+      display: flex;
+      justify-content: space-between;
+      width: 90%;
+      padding-top: 0.4rem;
+
+      p {
+        font-size: 0.5rem;
+        color: rgb(81, 81, 81);
+
+        span {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    .footerMain {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      display: flex;
+      justify-content: space-between;
+      .footerLink {
+        display: flex;
+
+        gap: 2rem;
+        padding-top: 0;
+        .socials {
+          padding-top: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .footer {
+    div {
+      max-width: 1600px;
+      width: 100%;
+      margin: 0 auto;
+    }
+    .footerMain {
+      .footerLink {
+        width: 60%;
+        gap: 1rem;
+      }
+    }
+  }
+}
