@@ -63,6 +63,14 @@
           font-size: 0.4rem;
           list-style: none;
           padding-top: 0.4rem;
+
+          a {
+            text-decoration: none;
+            color: black;
+            &:hover {
+              color: rgb(81, 81, 81);
+            }
+          }
         }
       }
       .socials {
@@ -72,10 +80,16 @@
           font-size: 0.4rem;
           color: rgb(81, 81, 81);
         }
-        ul li {
-          font-size: 0.4rem;
-          list-style: none;
-          padding-top: 0.4rem;
+        ul {
+          li {
+            font-size: 0.4rem;
+            list-style: none;
+            padding-top: 0.4rem;
+            &:hover {
+              color: rgb(81, 81, 81);
+              cursor: pointer;
+            }
+          }
         }
       }
     }
